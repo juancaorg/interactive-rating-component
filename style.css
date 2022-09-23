@@ -21,7 +21,9 @@
   --clr-medium-gray: hsl(216, 12%, 54%);
   --clr-dark-blue: hsl(213, 19%, 18%);
   --clr-very-dark-blue: hsl(216, 12%, 8%);
-  /* Fonts. */
+  /* Attribution color. */
+  --clr-brandeis-blue: hsl(212, 95%, 48%);
+  /* Font. */
   --ff-primary: "Overpass", sans-serif;
 }
 
@@ -41,4 +43,20 @@ body {
   border-radius: 0.9375rem;
   margin: auto;
   padding: 1.5rem 1.5rem 2rem;
+}
+
+.attribution {
+  color: var(--clr-white);
+  font-size: 0.75rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.attribution a {
+  color: var(--clr-orange);
+  text-decoration: none;
+}
+
+.attribution a:hover {
+  color: var(--clr-brandeis-blue);
 }
