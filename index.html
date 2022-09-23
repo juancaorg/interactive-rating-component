@@ -1,49 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Interactive rating component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <meta charset="UTF-8" />
+  <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Hack to import a favicon from another, already live website -->
+  <link rel="icon" type="image/png" href="https://www.google.com/s2/favicons?domain=www.juanca.org" />
+  <title>Interactive Rating Component | juanca.dev</title>
+  <link rel="stylesheet" href="./style.css" />
 </head>
+
 <body>
+  <main class="interactive-rating-card">
+    <img src="./images/icon-star.svg" alt="" aria-hidden="true" class="card__icon-star" />
+    <h1 class="card__title">How did we do?</h1>
+    <p class="card__description">
+      Please let us know how we did with your support request. All feedback is appreciated to help us improve our
+      offering!
+    </p>
+    <form action="" class="card__form">
+      <input type="radio" value="1" id="card__form--one" name="score" />
+      <label for="card__form--one">1</label>
+      <input type="radio" value="2" id="card__form--two" name="score" />
+      <label for="card__form--two">2</label>
+      <input type="radio" value="3" id="card__form--three" name="score" />
+      <label for="card__form--three">3</label>
+      <input type="radio" value="4" id="card__form--four" name="score" />
+      <label for="card__form--four">4</label>
+      <input type="radio" value="5" id="card__form--five" name="score" />
+      <label for="card__form--five">5</label>
+      <input type="submit" value="Submit" id="card__form--submit-button" />
+    </form>
+  </main>
 
-  <!-- Rating state start -->
-
-  How did we do?
-
-  Please let us know how we did with your support request. All feedback is appreciated 
-  to help us improve our offering!
-
-  1 2 3 4 5
-
-  Submit
-
-  <!-- Rating state end -->
-
-  <!-- Thank you state start -->
-
-  You selected <!-- Add rating here --> out of 5
-
-  Thank you!
-
-  We appreciate you taking the time to give a rating. If you ever need more support, 
-  don’t hesitate to get in touch!
-
-  <!-- Thank you state end -->
-
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  <footer class="attribution">
+    Challenge by
+    <a href="https://www.frontendmentor.io/challenges/interactive-rating-component-koxpeBUmI" rel="noopener"
+      target="_blank">Frontend Mentor</a>. Coded by
+    <a href="https://www.juanca.org" rel="noopener" target="_blank">@juancaorg</a>.
+  </footer>
 </body>
+
 </html>
