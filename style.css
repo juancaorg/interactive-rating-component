@@ -51,6 +51,14 @@ body {
   padding: 0.875rem;
 }
 
+.card__title {
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 1.875rem;
+  margin-top: 1rem;
+  margin-bottom: 0.625rem;
+}
+
 .attribution {
   color: var(--clr-white);
   font-size: 0.75rem;
