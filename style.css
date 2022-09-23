@@ -34,3 +34,11 @@ body {
   display: flex;
   flex-direction: column;
 }
+
+.card {
+  max-width: 327px;
+  background: radial-gradient(98.96% 98.96% at 50% 0%, #232A34 0%, #181E27 100%);
+  border-radius: 0.9375rem;
+  margin: auto;
+  padding: 1.5rem 1.5rem 2rem;
+}
