@@ -45,6 +45,12 @@ body {
   padding: 1.5rem 1.5rem 2rem;
 }
 
+.card__icon-star {
+  background-color: var(--clr-dark-blue);
+  border-radius: 50%;
+  padding: 0.875rem;
+}
+
 .attribution {
   color: var(--clr-white);
   font-size: 0.75rem;
