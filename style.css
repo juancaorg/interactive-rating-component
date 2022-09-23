@@ -59,6 +59,14 @@ body {
   margin-bottom: 0.625rem;
 }
 
+.card__description {
+  color: var(--clr-light-gray);
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.375rem;
+  margin-bottom: 1.5rem;
+}
+
 .attribution {
   color: var(--clr-white);
   font-size: 0.75rem;
