@@ -20,16 +20,18 @@
       offering!
     </p>
     <form action="" class="card__form">
-      <input type="radio" value="1" id="card__form--one" name="score" />
-      <label for="card__form--one">1</label>
-      <input type="radio" value="2" id="card__form--two" name="score" />
-      <label for="card__form--two">2</label>
-      <input type="radio" value="3" id="card__form--three" name="score" />
-      <label for="card__form--three">3</label>
-      <input type="radio" value="4" id="card__form--four" name="score" />
-      <label for="card__form--four">4</label>
-      <input type="radio" value="5" id="card__form--five" name="score" />
-      <label for="card__form--five">5</label>
+      <div class="card__form--radio-container">
+        <input type="radio" value="1" id="card__form--one" name="score" />
+        <label for="card__form--one">1</label>
+        <input type="radio" value="2" id="card__form--two" name="score" />
+        <label for="card__form--two">2</label>
+        <input type="radio" value="3" id="card__form--three" name="score" />
+        <label for="card__form--three">3</label>
+        <input type="radio" value="4" id="card__form--four" name="score" checked />
+        <label for="card__form--four">4</label>
+        <input type="radio" value="5" id="card__form--five" name="score" />
+        <label for="card__form--five">5</label>
+      </div>
       <input type="submit" value="Submit" id="card__form--submit-button" />
     </form>
   </main>

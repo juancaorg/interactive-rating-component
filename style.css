@@ -67,6 +67,56 @@ body {
   margin-bottom: 1.5rem;
 }
 
+.card__form {
+  display: flex;
+  flex-direction: column;
+}
+
+.card__form--radio-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-right: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.card__form--radio-container>[type=radio] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.card__form--radio-container>[type=radio]+label {
+  border-radius: 50%;
+  background-color: var(--clr-dark-blue);
+  color: var(--clr-medium-gray);
+  font-family: var(--ff-primary);
+  font-weight: 700;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  width: 2.625rem;
+  height: 2.625rem;
+  transition: background-color 100ms;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card__form--radio-container>[type=radio]:hover+label {
+  background-color: var(--clr-orange);
+  color: var(--clr-white);
+  cursor: pointer;
+}
+
+.card__form--radio-container>[type=radio]:checked+label {
+  background-color: var(--clr-light-gray);
+  color: var(--clr-white);
+}
+
+.card__form--radio-container>[type=radio]:checked:hover+label {
+  border: 0.125rem solid var(--clr-orange);
+}
+
 .attribution {
   color: var(--clr-white);
   font-size: 0.75rem;
