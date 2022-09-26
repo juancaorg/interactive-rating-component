@@ -129,6 +129,7 @@ body {
   letter-spacing: 1.86667px;
   text-align: center;
   text-transform: uppercase;
+  transition: background-color 100ms;
 }
 
 .card__form>[type=submit]:hover {
