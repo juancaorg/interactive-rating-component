@@ -174,4 +174,22 @@ body {
     font-size: 0.9375rem;
     line-height: 1.5rem;
   }
+
+  .card__form--radio-container {
+    margin-right: 1rem;
+  }
+
+  .card__form--radio-container>[type=radio]+label {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    width: 3.1875rem;
+    height: 3.1875rem;
+  }
+
+  .card__form>[type=submit] {
+    font-size: 0.9375rem;
+    line-height: 1.1875rem;
+    letter-spacing: 0.125rem;
+    padding: 0.8125rem;
+  }
 }
