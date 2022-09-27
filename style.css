@@ -153,3 +153,25 @@ body {
 .attribution a:hover {
   color: var(--clr-brandeis-blue);
 }
+
+@media screen and (min-width: 768px) {
+  .card {
+    max-width: 412px;
+    border-radius: 1.875rem;
+    padding: 2rem 2.5rem;
+  }
+
+  .card__icon-star {
+    padding: 1rem;
+  }
+
+  .card__title {
+    font-size: 1.75rem;
+    line-height: 2.1875rem;
+  }
+
+  .card__description {
+    font-size: 0.9375rem;
+    line-height: 1.5rem;
+  }
+}
