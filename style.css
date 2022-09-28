@@ -37,11 +37,18 @@ body {
   flex-direction: column;
 }
 
+.interactive-rating-component {
+  margin: auto;
+}
+
+.hidden {
+  display: none;
+}
+
 .card {
   max-width: 327px;
   background: radial-gradient(98.96% 98.96% at 50% 0%, #232A34 0%, #181E27 100%);
   border-radius: 0.9375rem;
-  margin: auto;
   padding: 1.5rem 1.5rem 2rem;
 }
 
@@ -136,6 +143,45 @@ body {
   background-color: var(--clr-white);
   color: var(--clr-orange);
   cursor: pointer;
+}
+
+.thanks {
+  padding: 2.125rem 1.5rem 2.3125rem;
+  text-align: center;
+}
+
+.thanks img {
+  width: 9rem;
+  margin-inline: auto;
+  margin-bottom: 1.5rem;
+}
+
+.thanks__result {
+  background-color: var(--clr-dark-blue);
+  border-radius: 1.40625rem;
+  width: fit-content;
+  color: var(--clr-orange);
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.375rem;
+  padding: 0.3125rem 0.75rem;
+  margin: auto;
+}
+
+.thanks__title {
+  color: var(--clr-white);
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 1.875rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0.625rem;
+}
+
+.thanks__description {
+  color: var(--clr-light-gray);
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.375rem;
 }
 
 .attribution {

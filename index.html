@@ -12,28 +12,40 @@
 </head>
 
 <body>
-  <main class="card">
-    <img src="./images/icon-star.svg" alt="" aria-hidden="true" class="card__icon-star" />
-    <h1 class="card__title">How did we do?</h1>
-    <p class="card__description">
-      Please let us know how we did with your support request. All feedback is appreciated to help us improve our
-      offering!
-    </p>
-    <form action="" class="card__form">
-      <div class="card__form--radio-container">
-        <input type="radio" value="1" id="card__form--one" name="score" />
-        <label for="card__form--one">1</label>
-        <input type="radio" value="2" id="card__form--two" name="score" />
-        <label for="card__form--two">2</label>
-        <input type="radio" value="3" id="card__form--three" name="score" />
-        <label for="card__form--three">3</label>
-        <input type="radio" value="4" id="card__form--four" name="score" checked />
-        <label for="card__form--four">4</label>
-        <input type="radio" value="5" id="card__form--five" name="score" />
-        <label for="card__form--five">5</label>
-      </div>
-      <input type="submit" value="Submit" id="card__form--submit-button" />
-    </form>
+  <main class="interactive-rating-component">
+    <div class="card">
+      <img src="./images/icon-star.svg" alt="" aria-hidden="true" class="card__icon-star" />
+      <h1 class="card__title">How did we do?</h1>
+      <p class="card__description">
+        Please let us know how we did with your support request. All feedback is appreciated to help us improve our
+        offering!
+      </p>
+      <form action="" class="card__form">
+        <div class="card__form--radio-container">
+          <input type="radio" value="1" id="card__form--one" name="score" />
+          <label for="card__form--one">1</label>
+          <input type="radio" value="2" id="card__form--two" name="score" />
+          <label for="card__form--two">2</label>
+          <input type="radio" value="3" id="card__form--three" name="score" />
+          <label for="card__form--three">3</label>
+          <input type="radio" value="4" id="card__form--four" name="score" checked />
+          <label for="card__form--four">4</label>
+          <input type="radio" value="5" id="card__form--five" name="score" />
+          <label for="card__form--five">5</label>
+        </div>
+        <input type="submit" value="Submit" id="card__form--submit-button" />
+      </form>
+    </div>
+
+    <div class="card thanks hidden">
+      <img src="./images/illustration-thank-you.svg" alt="" aria-hidden="true" />
+      <p class="thanks__result">You selected <span class="thanks__rating"></span> out of 5</p>
+      <h1 class="thanks__title">Thank you!</h1>
+      <p class="thanks__description">
+        We appreciate you taking the time to give a rating. If you ever need more support, don't hesitate to get in
+        touch!
+      </p>
+    </div>
   </main>
 
   <footer class="attribution">
