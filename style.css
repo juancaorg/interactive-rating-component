@@ -145,6 +145,10 @@ body {
   cursor: pointer;
 }
 
+.card__form>[type=submit]:disabled {
+  opacity: 50%;
+}
+
 .thanks {
   padding: 2.125rem 1.5rem 2.3125rem;
   text-align: center;
