@@ -238,4 +238,26 @@ body {
     letter-spacing: 0.125rem;
     padding: 0.8125rem;
   }
+
+  .thanks img {
+    width: 10.125rem;
+    margin-bottom: 2rem;
+  }
+
+  .thanks__result {
+    font-size: 0.9375rem;
+    line-height: 1.5rem;
+  }
+
+  .thanks__title {
+    font-size: 1.75rem;
+    line-height: 2.1875rem;
+    margin-top: 2rem;
+    margin-bottom: 0.4375rem;
+  }
+
+  .thanks__description {
+    font-size: 0.9375rem;
+    line-height: 1.5rem;
+  }
 }
