@@ -22,8 +22,10 @@ cardForm.addEventListener("submit", (event) => {
   event.preventDefault();
   if (selectedValue !== 0) {
     thanksRating.textContent = selectedValue;
-    ratingCard.classList.toggle("hidden");
-    thanksCard.classList.toggle("hidden");
+    // Add and remove the 'hidden' class to
+    // the corresponsing cards.
+    ratingCard.classList.add("hidden");
+    thanksCard.classList.remove("hidden");
   }
 });
 
