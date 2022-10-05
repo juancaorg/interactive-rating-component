@@ -50,6 +50,28 @@ Users should be able to:
 
 I learned how to style radio buttons to look more like regular buttons (that's new for me) and how to manipulate the class list for DOM elements using [`Element.classList`](https://developer.mozilla.org/en-US/docs/Web/API/Element/classList).
 
+Update 20221005:
+
+Safari didn't adhere to my submit button (`<input type="submit" />`) style on iOS. I let it slide, but it bothered me that it wasn't working.
+
+It seems like it's been a problem with Safari since 2009.
+
+It has been fixed on macOS, but not iOS, which has more active users in general.
+
+To fix it, add the following CSS:
+
+```css
+input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+```
+
+Now all your input elements (like `<input type="submit" />`) should work correctly on Safari iOS.
+
+Waiting for Apple to fix this, tho 💀.
+
 ### Continued development
 
 Excited for the upcoming frontendmentor.io projects which add more JavaScript into the mix!
@@ -69,3 +91,5 @@ Without reading a little bit of both, this solution wouldn't exist.
 I implemented @elaineleung's radio buttons styling and how to interact with the radio buttons and card form in my script.
 
 And I used @Orodan's idea to add the raw HTML thanks card to my `index.html`, and hiding the corresponding card using a `hidden` class (using `display: none`) and `Element.classList.add()` and `Element.classList.remove()` in my script to toggle the `hidden` class.
+
+Thanks to [Sergey](https://stackoverflow.com/users/2591664/sergey) for his answer about ["CSS: Safari on Mac doesn't adhere to my Submit Button style" on Stack Overflow](https://stackoverflow.com/questions/1681826/css-safari-on-mac-doesnt-adhere-to-my-submit-button-style).
